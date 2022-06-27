@@ -13,7 +13,7 @@ phases:
       # build Rust binary
       - cargo build --release
       # binary name must be "bootstrap" for Lambda custom runtime
-      - mv target/release/YOUR_PROJECT_NAME bootstrap
+      - mv target/release/bootstrap bootstrap
       # strip & check size, dependencies
       - strip --strip-all bootstrap
       - size bootstrap
